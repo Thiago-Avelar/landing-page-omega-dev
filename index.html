@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Central de Projetos da Omega Dev"> 
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-     <link rel="stylesheet" href="src/css/style.css">
+    <meta name="description" content="Central de Projetos da Omega Dev">
+    <link rel="icon" type="image/png" href="./src/imagens/omega-dev-logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="src/css/style.css">
     <title>Omega Dev</title>
 </head>
 <body>
@@ -22,10 +23,10 @@
                     <a href="#projetos">Projetos</a>
                 </li>
                 <li class="item">
-                    <a href="#quem-somos">Quem somos</a>
+                    <a href="#quem-somos">Quem Somos</a>
                 </li>
                 <li class="item">
-                    <a href="#contato">contato</a>
+                    <a href="#contato">Contato</a>
                 </li>
             </ul>
         </nav> 
@@ -34,16 +35,14 @@
 
     <main class="conteudo-principal" id="projetos">
         <section class="paineis">
-            <h1 class="titulo">Nosso Projetos</h1>
-            
-            <div class="imagem-painel projeto1 mostrar"></div>
-            <div class="imagem-painel projeto2"></div>
-            <div class="imagem-painel projeto3"></div>
+            <h1 class="titulo">Nossos Projetos</h1>
+            <div class="imagem-painel projeto1 mostrar" role="img" aria-label="Projeto 1"></div>
+            <div class="imagem-painel projeto2" role="img" aria-label="Projeto 2"></div>
+            <div class="imagem-painel projeto3" role="img" aria-label="Projeto 3"></div>
 
-            <a href="#" id="btn-voltar" class="seta btn-voltar">voltar</a>
-            <a href="#" id="btn-avancar" class="seta btn-avancar">avançar</a>
-            
-        </section> 
+            <a href="#" id="btn-voltar" class="seta btn-voltar" aria-label="Voltar" tabindex="0">Voltar</a>
+            <a href="#" id="btn-avancar" class="seta btn-avancar" aria-label="Avançar" tabindex="0">Avançar</a>
+        </section>
 
         <section class="quem-somos" id="quem-somos">
 
@@ -56,7 +55,7 @@
                     </p>
                 </div>
 
-                <img src="./src/imagens/personagem-cidade-cyberpunk.jpg" class="imagem" alt="persomagem">
+                <img src="./src/imagens/personagem-cidade-cyberpunk.jpg" class="imagem" alt="personagem cidade cyberpunk">
             </div>
 
         </section>
@@ -66,28 +65,26 @@
 <footer class="rodape" id="contato">
 <nav class="navegacao">
 
-    <a href="#" class="logo">
+    <a href="#" class="logo" aria-label="Página inicial Omega Dev">
         <img src="./src/imagens/omega-dev-logo.png" alt="Logo Omega Dev" class="imagem">
         <span class="titulo">Omega Dev</span>
     </a>
 
     <div class="redes-sociais">
-        <a href="#" class="rede-social">
+        <a href="https://facebook.com/" class="rede-social" aria-label="Facebook Omega Dev" target="_blank" rel="noopener">
             <i class="fab fa-facebook-f"></i>
         </a>
-
-        <a href="#" class="rede-social">
+        <a href="https://instagram.com/" class="rede-social" aria-label="Instagram Omega Dev" target="_blank" rel="noopener">
             <i class="fab fa-instagram-square"></i>
         </a>
-
-        <a href="#" class="rede-social">
+        <a href="https://twitter.com/" class="rede-social" aria-label="Twitter Omega Dev" target="_blank" rel="noopener">
             <i class="fab fa-twitter"></i>
         </a>
     </div>
 
 </nav>
 
-<p class="copyright">Todos os direitos reservados</p>
+<p class="copyright">Todos os direitos reservados &copy; Omega Dev</p>
 </footer>
 <script src="./src/js/painel.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>

@@ -2,17 +2,28 @@
 
 body{
     font-family: "Public Sans", sans-serif;
-}
+
+
 
 *{
     margin:0 ; 
     padding:0 ; 
     box-sizing: border-box;
-    color: #000;
+    color: var(--cor-texto);
 }
 
-imag{
+img{
     max-width: 100%;
+    display: block;
+}
+}
+
+:root {
+    --cor-principal: #1ed760;
+    --cor-fundo-escuro: #003;
+    --cor-texto: #000;
+    --cor-texto-claro: #fff;
+    --cor-hover: #1ed760;
 }
 
 a{
@@ -78,10 +89,17 @@ html{
     transition: 0.3s ease-in-out;
  }
 
- .cabecalho .navegacao .menu .item a:hover{
-    background-color: #1ed760;
-    color: azure;
- }
+ .cabecalho .navegacao .menu .item a:hover,
+ .cabecalho .navegacao .menu .item a:focus {
+    background-color: var(--cor-hover);
+    color: var(--cor-texto-claro);
+    outline: 2px solid var(--cor-hover);
+    outline-offset: 2px;
+}
+
+ .cabecalho .navegacao .menu .item a:focus {
+    box-shadow: 0 0 0 2px var(--cor-hover);
+}
 
  @media(max-width: 624px){
     .cabecalho{
@@ -146,7 +164,8 @@ html{
 }
 
 .conteudo-principal .paineis .titulo{
-    color: #fff;
+    color: var(--cor-texto-claro);
+    text-shadow: 2px 2px 8px #000a;
     text-transform: uppercase;
     font-size: calc(1em + 1vw);
 }
@@ -161,6 +180,15 @@ html{
     position: absolute;
     text-indent: 100%;
     overflow: hidden;
+    cursor: pointer;
+    outline: none;
+    border: 2px solid transparent;
+    transition: border 0.2s;
+}
+
+.conteudo-principal .paineis .seta:focus {
+    border: 2px solid var(--cor-hover);
+    box-shadow: 0 0 0 2px var(--cor-hover);
 }
 
 .conteudo-principal .paineis .seta.btn-voltar{
@@ -177,7 +205,7 @@ html{
 /* Quem Somos */
 
 .quem-somos{
-    background-color: #003;
+    background-color: var(--cor-fundo-escuro);
 }
 
 .quem-somos .conteudo{
@@ -196,14 +224,14 @@ width: 40%;
 
 .quem-somos .conteudo .informacoes .titulo{
     font-size: 50px;
-    color: #1ed760;
+    color: var(--cor-principal);
     margin-bottom: 20px;
 }
 
 .quem-somos .conteudo .informacoes .texto{
     font-size: 20px;
     line-height: 1.5;
-    color: #fff;
+    color: var(--cor-texto-claro);
     font-weight: 400;
 }
 
@@ -258,10 +286,15 @@ width: 40%;
     padding: 15px;
     width: 65px;
     transition: 0.3s ease-in-out;
+    outline: none;
 }
 
-.rodape .redes-sociais a:hover{
-    background-color: #1ed760;
+.rodape .redes-sociais a:hover,
+.rodape .redes-sociais a:focus {
+    background-color: var(--cor-hover);
+    color: var(--cor-texto-claro);
+    outline: 2px solid var(--cor-hover);
+    outline-offset: 2px;
 }
 
 .rodape .navegacao .logo .imagem{
